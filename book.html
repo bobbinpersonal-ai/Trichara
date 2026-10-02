@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Install | Trichara PPF</title>
+<meta name="description" content="Book mobile paint protection film installation. Pick your package, tell us about your car, and we'll confirm your install day.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">TRICHARA <span>Paint Protection</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#packages">Packages</a>
+      <a href="index.html#how">How It Works</a>
+      <a href="index.html#area">Service Area</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+15551234567" class="phone-link">(555) 123-4567</a>
+      <a href="book.html" class="btn btn-primary">Book Now</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="book-page">
+  <div class="container book-inner">
+    <h1>Book your install</h1>
+    <p class="section-sub">Two minutes. We'll call to confirm your vehicle details and lock your install day — usually within a few hours.</p>
+
+    <div class="book-grid">
+      <form class="book-form" action="https://formsubmit.co/info@trichara.com" method="POST">
+        <input type="hidden" name="_subject" value="New PPF booking request — Trichara">
+        <input type="hidden" name="_template" value="table">
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="name">Full name *</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="vehicle">Vehicle (year / make / model) *</label>
+            <input type="text" id="vehicle" name="vehicle" placeholder="e.g. 2024 Tesla Model Y" required>
+          </div>
+          <div class="form-field">
+            <label for="package">Package *</label>
+            <select id="package" name="package" required>
+              <option value="partial">Partial Front — $899</option>
+              <option value="full-front" selected>Full Front — $1,999</option>
+              <option value="track">Track Package — $2,999</option>
+              <option value="full-body">Full Body — from $5,999</option>
+              <option value="not-sure">Not sure — help me choose</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="address">Install address (street, city, ZIP) *</label>
+          <input type="text" id="address" name="install_address" placeholder="Where we'll do the work — driveway or office lot" required autocomplete="street-address">
+        </div>
+
+        <div class="form-field">
+          <label for="date">Preferred date</label>
+          <input type="date" id="date" name="preferred_date">
+        </div>
+
+        <div class="form-field">
+          <label for="notes">Anything we should know? (optional)</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Existing chips, aftermarket parts, gate codes…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-large btn-block">Request My Install Day</button>
+        <p class="microcopy" style="text-align:center">No payment due now — we confirm everything by phone first.</p>
+      </form>
+
+      <aside class="book-side">
+        <h3>Prefer to talk?</h3>
+        <p>Call or text us and we'll get you booked in one conversation.</p>
+        <a href="tel:+15551234567" class="btn btn-secondary btn-large btn-block">(555) 123-4567</a>
+        <h3 style="margin-top:2rem">What happens next</h3>
+        <ol class="book-steps">
+          <li>We call to confirm your vehicle and package.</li>
+          <li>We lock your install day — usually within the week.</li>
+          <li>We show up with everything. You hand us the keys.</li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="logo">TRICHARA <span>Paint Protection</span></p>
+      <p class="footer-tag">Mobile paint protection film.<br>We come to you.</p>
+    </div>
+    <div>
+      <p class="footer-head">Packages</p>
+      <a href="index.html#packages">Partial Front — $899</a>
+      <a href="index.html#packages">Full Front — $1,999</a>
+      <a href="index.html#packages">Track — $2,999</a>
+      <a href="index.html#packages">Full Body — from $5,999</a>
+    </div>
+    <div>
+      <p class="footer-head">Company</p>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#area">Service area</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="book.html">Book now</a>
+    </div>
+    <div>
+      <p class="footer-head">Contact</p>
+      <a href="tel:+15551234567">(555) 123-4567</a>
+      <p class="footer-tag">Sacramento, CA<br>Mon–Sat, 8am–6pm</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Trichara Paint Protection. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
