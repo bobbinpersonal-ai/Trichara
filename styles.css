@@ -174,6 +174,32 @@ body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
 .bottom-nav a.bn-call{color:#111;background:var(--amber);font-weight:800}
 .bottom-nav a.bn-call.active{color:#111}
 }
+/* Photo collage (models index) */
+.chipbar{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-filter:blur(8px);border-bottom:1px solid #222;padding:.6rem 0}
+.chips{display:flex;gap:.5rem;overflow-x:auto;padding:.2rem 0;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;padding:.45rem 1rem;border:1px solid #333;border-radius:99px;color:#ddd;text-decoration:none;font-size:.82rem;font-weight:600;white-space:nowrap}
+.chip:hover{border-color:var(--amber);color:var(--amber)}
+.csec{padding:2.6rem 0}
+.csec:nth-child(even){background:#0e0e0e}
+.collage{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
+.ccard{position:relative;display:block;border-radius:10px;overflow:hidden;aspect-ratio:4/3;background:#1a1a1a}
+.ccard.wide{grid-column:span 2;aspect-ratio:8/3}
+.ccard img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.ccard:hover img{transform:scale(1.05)}
+.ccap{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .7rem .55rem;font-size:.8rem;font-weight:700;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.85));white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.astrip{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.acard{margin:0;border-radius:10px;overflow:hidden;background:#1a1a1a}
+.acard img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.acard figcaption{padding:.6rem .8rem;font-size:.82rem;color:#ccc}
+@media(max-width:900px){.collage{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){
+.collage{grid-template-columns:repeat(2,1fr);gap:.45rem}
+.ccard.wide{grid-column:span 2}
+.astrip{grid-template-columns:1fr;gap:.6rem}
+.acard img{aspect-ratio:16/9}
+.csec{padding:1.8rem 0}
+}
 /* Related models */
 .rel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
 .rel-card{display:block;background:#141416;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:.18s}
