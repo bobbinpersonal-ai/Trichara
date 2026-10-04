@@ -119,3 +119,19 @@ lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
 document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
 }
 })();
+/* Bottom nav active state */
+(function(){
+var path = location.pathname;
+var map = {'/':'home','/index.html':'home','/models/':'models','/models/wrap.html':'models','/packages/':'packages','/learn/brands.html':'brands'};
+var key = map[path];
+if(!key){
+if(path.indexOf('/models/')===0) key='models';
+else if(path.indexOf('/packages/')===0) key='packages';
+else if(path.indexOf('/vehicles/')===0) key='models';
+else if(path.indexOf('/learn/')===0) key='brands';
+}
+if(key){
+var el = document.querySelector('.bottom-nav a[data-nav="'+key+'"]');
+if(el) el.classList.add('active');
+}
+})();

@@ -162,6 +162,18 @@ border-bottom:1px solid var(--line);
 .trust-logos img{height:34px;width:auto;max-width:150px;object-fit:contain;filter:grayscale(1) brightness(1.6);opacity:.85;transition:filter .25s,opacity .25s}
 .trust-logos img:hover{filter:none;opacity:1}
 .trust-bar a{color:var(--amber);font-weight:700;text-decoration:none}
+/* Bottom nav (mobile) */
+.bottom-nav{display:none}
+@media(max-width:860px){
+body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+.bottom-nav{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;background:rgba(12,12,12,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid #2a2a2a;padding-bottom:env(safe-area-inset-bottom)}
+.bottom-nav a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:.55rem 0 .5rem;color:#bbb;text-decoration:none;font-size:.68rem;font-weight:600;min-width:0}
+.bottom-nav a span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.bn-ico{font-size:1.25rem;line-height:1}
+.bottom-nav a.active{color:var(--amber)}
+.bottom-nav a.bn-call{color:#111;background:var(--amber);font-weight:800}
+.bottom-nav a.bn-call.active{color:#111}
+}
 /* Related models */
 .rel-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
 .rel-card{display:block;background:#141416;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:.18s}
