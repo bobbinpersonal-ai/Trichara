@@ -405,3 +405,5 @@ body:has(.scroll-bg) .trust-bar{background:rgba(8,8,9,.78)}
 .site-header{display:none}
 body{padding-top:0 !important}
 }
+
+.logo-white{filter:brightness(0) invert(1)}
