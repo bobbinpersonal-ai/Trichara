@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model Wraps | Trichara</title>
+<meta name="description" content="Vinyl wrap finishes, packages and pricing for your exact make and model.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='11' fill='%23f5a623'/%3E%3Cpath d='M14 13h20v6h-7v16h-6V19h-7z' fill='%23161616'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+<div class="wrap header-inner">
+<a class="logo" href="/" aria-label="Trichara Wrap Shop — home">
+<img class="logo-svg" src="/logo.svg" alt="Trichara Wrap Shop logo">
+</a>
+<nav class="main-nav" id="mainNav">
+<div class="nav-item has-drop">
+<button class="drop-btn" aria-haspopup="true">Vehicles</button>
+<div class="dropdown">
+<a href="/vehicles/american.html">American</a>
+<a href="/vehicles/japanese.html">Japanese</a>
+<a href="/vehicles/ev.html">EV</a>
+<a href="/vehicles/suv.html">SUV</a>
+<a href="/vehicles/truck.html">Truck</a>
+</div>
+</div>
+<div class="nav-item has-drop">
+<button class="drop-btn" aria-haspopup="true">Packages</button>
+<div class="dropdown">
+<a href="/packages/black-roof.html">Black roof</a>
+<a href="/packages/chrome-delete.html">Chrome delete</a>
+<a href="/packages/racing-stripes.html">Racing stripes</a>
+<a href="/packages/hood-accents.html">Hood & accents</a>
+<a href="/packages/full-color-change.html">Full color change</a>
+<a href="/packages/fleet-graphics.html">Fleet graphics</a>
+</div>
+</div>
+<div class="nav-item has-drop">
+<button class="drop-btn" aria-haspopup="true">Learn</button>
+<div class="dropdown">
+<a href="/learn/brands.html">Film brands</a>
+<a href="/learn/visualizer.html">Finish visualizer</a>
+<a href="/learn/films.html">Film finishes</a>
+<a href="/learn/care.html">Wrap care</a>
+</div>
+</div>
+<a href="/models/" class="nav-find">Find your car</a>
+<a href="/#pricing">Pricing</a>
+<a href="/#reviews">Reviews</a>
+<a href="/book.html">Contact</a>
+</nav>
+<a class="btn btn-call header-call" href="tel:+14244260760">
+<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+(424) 426-0760
+</a>
+<button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+<main>
+<div id="modelApp">
+<section class="page-hero page-hero-slim">
+<div class="wrap page-hero-content">
+<p class="eyebrow">Loading…</p>
+<h1>Finding your car…</h1>
+</div>
+</section>
+</div>
+<noscript>
+<section class="section"><div class="wrap narrow">
+<h1>Find your car</h1>
+<p class="lede">This page needs JavaScript to show your model. Call us and we'll sort it out:</p>
+<p><a class="btn btn-big" href="tel:+14244260760">Call (424) 426-0760</a></p>
+<p><a href="/models/">Browse all 124 models →</a></p>
+</div></section>
+</noscript>
+<script>
+(function(){
+var slug = new URLSearchParams(location.search).get("m") || "";
+var app = document.getElementById("modelApp");
+function fail(){
+app.innerHTML = '<section class="section"><div class="wrap narrow"><p class="eyebrow">Not found</p><h1>Couldn\u2019t find that model.</h1><p class="lede">Try the search — we wrap 124 models.</p><p><a class="btn" href="/models/">Find your car →</a></p></div></section>';
+}
+Promise.all([
+fetch("data.json").then(r=>r.json()),
+fetch("realwraps.json").then(r=>r.json()).catch(()=>({}))
+]).then(function(res){
+var models = res[0], realwraps = res[1];
+var m = models.find(x=>x.slug===slug);
+if(!m){ fail(); return; }
+var CATL = {japanese:"Japanese",american:"American",ev:"EV",suv:"SUV",truck:"Truck",european:"European"};
+document.title = m.name + " Wraps (" + m.years + ") — Colors, Packages & Pricing | Trichara";
+var meta = document.querySelector('meta[name="description"]');
+if(meta) meta.setAttribute("content", "Vinyl wrap finishes, packages and pricing for the " + m.name + " (" + m.years + "). " + CATL[m.cat] + " " + m.body + " wraps.");
+var pkgs = [
+["Full color change","from $2,999","/packages/full-color-change.html"],
+["Black roof","from $399","/packages/black-roof.html"],
+["Chrome delete","from $799","/packages/chrome-delete.html"],
+["Racing stripes","from $499","/packages/racing-stripes.html"]
+];
+var pkgHtml = pkgs.map(p=>'<a class="pkg-card" href="'+p[2]+'"><h3>'+p[0]+'</h3><p class="pkg-price">'+p[1]+'</p></a>').join("");
+var related = models.filter(x=>x.cat===m.cat && x.slug!==m.slug).slice(0,4);
+var relHtml = related.map(r=>'<a class="model-card" href="/models/'+r.slug+'"><span class="model-img" style="background-image:url(\''+r.photo+'\')"></span><span class="model-name">'+r.name+'</span><span class="model-years">'+r.years+'</span></a>').join("");
+var rw = realwraps[m.slug] || [];
+var rwHtml = rw.length ? '<section class="section"><div class="wrap"><p class="eyebrow">Real wraps</p><h2>Wrapped '+m.name.split(" ").slice(1).join(" ")+'s.</h2><p class="section-sub">Actual vinyl jobs on this exact model — not stock photos.</p><div class="gallery gallery-4">' +
+rw.map(p=>'<figure class="g-item"><img src="'+p.url+'" alt="'+m.name+' — '+p.desc+'" loading="lazy"><figcaption>'+p.slot+' · '+p.desc+'</figcaption></figure>').join("") +
+'</div></div></section>' : "";
+app.innerHTML =
+'<section class="page-hero" style="background-image:url(\''+m.photo+'\')"><div class="hero-shade"></div><div class="wrap page-hero-content">'+
+'<p class="eyebrow">'+CATL[m.cat]+' · '+m.years+'</p><h1>'+m.name+'<br>wraps.</h1>'+
+'<p class="hero-sub">Every finish, every package — for your exact '+m.body.toLowerCase()+'.</p>'+
+'<div class="hero-ctas"><a class="btn btn-big" href="tel:+14244260760">Call (424) 426-0760</a> <a class="btn btn-ghost" href="/book.html">Book online</a></div>'+
+'</div></section>'+
+'<section class="section edu"><div class="wrap narrow">'+
+'<p class="eyebrow">Why wrap a '+m.name+'?</p><h2>Protect it. Transform it.</h2>'+
+'<p class="lede">A vinyl wrap gives your '+m.name+' a brand-new color and a layer of paint protection — without the cost or permanence of paint. '+(m.photo&&m.credit?'Photo: '+m.credit+'.':'')+'</p>'+
+'</div></section>'+
+rwHtml +
+'<section class="section section-dark"><div class="wrap">'+
+'<p class="eyebrow">Packages</p><h2>Wraps for your '+m.name+'.</h2>'+
+'<div class="pkg-grid">'+pkgHtml+'</div>'+
+'<div class="center" style="margin-top:1.6rem"><a class="btn btn-big" href="/packages/">All packages →</a></div>'+
+'</div></section>'+
+'<section class="section"><div class="wrap">'+
+'<h2>More '+CATL[m.cat]+' wraps.</h2><div class="model-grid">'+relHtml+'</div>'+
+'<div class="center" style="margin-top:1.6rem"><a class="btn" href="/models/">Find your exact car →</a></div>'+
+'</div></section>';
+}).catch(fail);
+})();
+</script>
+</main>
+<footer>
+<div class="wrap foot-grid">
+<div>
+<img class="logo-svg logo-foot" src="/logo.svg" alt="Trichara Wrap Shop logo">
+<p>Color-change wraps, chrome deletes, and fleet graphics.</p>
+<p><a class="foot-tel" href="tel:+14244260760">(424) 426-0760</a></p>
+</div>
+<div>
+<h4>Vehicles</h4>
+<a href="/vehicles/american.html">American</a>
+<a href="/vehicles/japanese.html">Japanese</a>
+<a href="/vehicles/ev.html">EV</a>
+<a href="/vehicles/suv.html">SUV</a>
+<a href="/vehicles/truck.html">Truck</a>
+</div>
+<div>
+<h4>Learn</h4>
+<a href="/learn/films.html">Film finishes</a>
+<a href="/learn/care.html">Wrap care</a>
+<a href="/#pricing">Pricing</a>
+<a href="/book.html">Contact</a>
+</div>
+</div>
+<p class="copy">© 2026 Trichara Wrap Shop. All rights reserved.</p>
+</footer>
+<script src="/script.js"></script>
+</body>
+</html>
