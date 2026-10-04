@@ -3,555 +3,285 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mobile Paint Protection Film in Sacramento | Trichara PPF</title>
-<meta name="description" content="We install XPEL paint protection film at your driveway. 10-year warranty, most cars done in a day. Serving Sacramento, Elk Grove, Roseville, Folsom and surrounding areas.">
-<style>
-/* Trichara PPF — mobile paint protection film */
-
-:root {
-  --ink: #1a1a1a;
-  --ink-soft: #4a4a4a;
-  --paper: #ffffff;
-  --paper-warm: #f7f5f1;
-  --accent: #e8890c;
-  --accent-dark: #c26e05;
-  --line: #e5e0d8;
-  --radius: 12px;
-}
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  color: var(--ink);
-  background: var(--paper);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-.container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
-
-h1, h2, h3 { line-height: 1.2; letter-spacing: -0.01em; }
-h2 { font-size: 2rem; margin-bottom: 0.75rem; }
-.section-sub { color: var(--ink-soft); font-size: 1.1rem; max-width: 640px; }
-
-.btn {
-  display: inline-block; padding: 0.8rem 1.6rem; border-radius: 8px;
-  font-weight: 700; text-decoration: none; border: none; cursor: pointer;
-  font-size: 1rem; transition: background 0.15s ease;
-}
-.btn-primary { background: var(--accent); color: #fff; }
-.btn-primary:hover { background: var(--accent-dark); }
-.btn-secondary { background: var(--ink); color: #fff; }
-.btn-secondary:hover { background: #333; }
-.btn-large { padding: 1rem 2.2rem; font-size: 1.1rem; }
-.btn-block { display: block; width: 100%; text-align: center; }
-
-/* Header */
-.site-header {
-  position: sticky; top: 0; z-index: 50;
-  background: rgba(255,255,255,0.97); border-bottom: 1px solid var(--line);
-}
-.header-inner { display: flex; align-items: center; gap: 1.5rem; padding: 0.9rem 20px; }
-.logo { font-weight: 900; font-size: 1.25rem; letter-spacing: 0.04em; color: var(--ink); text-decoration: none; }
-.logo span { display: block; font-weight: 400; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-soft); }
-.main-nav { display: flex; gap: 1.4rem; margin-left: auto; }
-.main-nav a { color: var(--ink-soft); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
-.main-nav a:hover { color: var(--ink); }
-.header-cta { display: flex; align-items: center; gap: 1rem; }
-.phone-link { font-weight: 800; color: var(--ink); text-decoration: none; white-space: nowrap; }
-.nav-toggle { display: none; background: none; border: none; font-size: 1.6rem; cursor: pointer; margin-left: auto; }
-
-/* Hero */
-.hero { background: var(--ink); color: #fff; padding: 5rem 0 4.5rem; }
-.hero-inner { max-width: 760px; }
-.eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.8rem; font-weight: 700; color: var(--accent); margin-bottom: 1rem; }
-.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
-.hero-sub { font-size: 1.25rem; color: #d8d8d8; max-width: 620px; margin-bottom: 2rem; }
-.hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
-.microcopy { font-size: 0.85rem; color: #a9a9a9; }
-
-/* Trust bar */
-.trust-bar { background: var(--paper-warm); border-bottom: 1px solid var(--line); }
-.trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding: 1.6rem 20px; }
-.trust-item strong { display: block; font-size: 1rem; }
-.trust-item span { font-size: 0.85rem; color: var(--ink-soft); }
-
-/* Packages */
-.packages { padding: 4.5rem 0; }
-.packages h2 { text-align: center; }
-.packages .section-sub { text-align: center; margin: 0 auto 2.5rem; }
-.package-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
-.package-card {
-  border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 1.8rem 1.5rem; display: flex; flex-direction: column; background: var(--paper);
-}
-.package-card.featured { border: 2px solid var(--accent); position: relative; }
-.badge {
-  position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
-  background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 800;
-  text-transform: uppercase; letter-spacing: 0.08em; padding: 0.3rem 0.9rem; border-radius: 20px;
-  white-space: nowrap;
-}
-.package-card h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
-.price { font-size: 2rem; font-weight: 900; margin-bottom: 1rem; }
-.package-card ul { list-style: none; margin-bottom: 1rem; flex-grow: 1; }
-.package-card ul li { padding: 0.35rem 0; font-size: 0.95rem; border-bottom: 1px solid var(--paper-warm); }
-.package-card ul li:last-child { border-bottom: none; }
-.package-card ul li::before { content: "✓ "; color: var(--accent-dark); font-weight: 800; }
-.package-meta { font-size: 0.85rem; color: var(--ink-soft); margin-bottom: 1.25rem; }
-.packages-note { text-align: center; color: var(--ink-soft); font-size: 0.9rem; margin-top: 1.75rem; max-width: 700px; margin-left: auto; margin-right: auto; }
-
-/* How */
-.how { background: var(--paper-warm); padding: 4.5rem 0; }
-.how h2 { text-align: center; margin-bottom: 2.5rem; }
-.steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.step { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem 1.6rem; }
-.step-num {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 2.6rem; height: 2.6rem; border-radius: 50%;
-  background: var(--ink); color: #fff; font-weight: 800; font-size: 1.1rem; margin-bottom: 1rem;
-}
-.step h3 { margin-bottom: 0.5rem; font-size: 1.15rem; }
-.step p { color: var(--ink-soft); font-size: 0.95rem; }
-
-/* Why */
-.why { padding: 4.5rem 0; }
-.why-inner { max-width: 900px; }
-.why h2 { text-align: center; margin-bottom: 2.5rem; }
-.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
-.why-item h3 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-.why-item p { color: var(--ink-soft); font-size: 0.95rem; }
-.why-honest {
-  background: var(--paper-warm); border-left: 4px solid var(--accent);
-  padding: 1.25rem 1.5rem; border-radius: 0 8px 8px 0;
-  font-size: 1.02rem; max-width: 720px; margin: 0 auto;
-}
-
-/* Area */
-.area { background: var(--paper-warm); padding: 4rem 0; text-align: center; }
-.area .section-sub { margin: 0 auto 1.75rem; }
-.area-list { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem; max-width: 720px; margin: 0 auto 1.25rem; }
-.area-list li { background: var(--paper); border: 1px solid var(--line); border-radius: 20px; padding: 0.45rem 1.1rem; font-size: 0.92rem; font-weight: 600; }
-.area .packages-note { margin-top: 0; }
-
-/* FAQ */
-.faq { padding: 4.5rem 0; }
-.faq-inner { max-width: 760px; }
-.faq h2 { text-align: center; margin-bottom: 2rem; }
-.faq details { border: 1px solid var(--line); border-radius: 10px; margin-bottom: 0.75rem; background: var(--paper); }
-.faq summary { padding: 1.1rem 1.4rem; font-weight: 700; cursor: pointer; list-style: none; font-size: 1.02rem; }
-.faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; float: right; color: var(--accent-dark); font-size: 1.3rem; line-height: 1; }
-.faq details[open] summary::after { content: "–"; }
-.faq details p { padding: 0 1.4rem 1.3rem; color: var(--ink-soft); }
-
-/* Final CTA */
-.final-cta { background: var(--ink); color: #fff; padding: 4.5rem 0; text-align: center; }
-.final-cta h2 { font-size: 2.2rem; margin-bottom: 0.75rem; }
-.final-cta p { color: #d8d8d8; margin-bottom: 2rem; font-size: 1.1rem; }
-
-/* Footer */
-.site-footer { background: #111; color: #cfcfcf; padding: 3rem 0 0; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2rem; padding-bottom: 2.5rem; }
-.footer-grid .logo { color: #fff; }
-.footer-head { font-weight: 800; color: #fff; margin-bottom: 0.8rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
-.footer-grid a { display: block; color: #cfcfcf; text-decoration: none; font-size: 0.92rem; padding: 0.2rem 0; }
-.footer-grid a:hover { color: #fff; }
-.footer-tag { font-size: 0.9rem; color: #9a9a9a; margin-top: 0.5rem; }
-.footer-bottom { border-top: 1px solid #2a2a2a; padding: 1.25rem 20px; font-size: 0.85rem; color: #8a8a8a; }
-
-/* Book page */
-.book-page { padding: 3.5rem 0 4.5rem; background: var(--paper-warm); }
-.book-inner { max-width: 960px; }
-.book-inner h1 { margin-bottom: 0.5rem; }
-.book-inner > .section-sub { margin-bottom: 2.5rem; }
-.book-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; align-items: start; }
-.book-form { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 2.2rem; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.form-field { margin-bottom: 1.1rem; }
-.form-field label { display: block; font-weight: 700; font-size: 0.9rem; margin-bottom: 0.35rem; }
-.form-field input, .form-field select, .form-field textarea {
-  width: 100%; padding: 0.75rem 0.9rem; border: 1px solid var(--line);
-  border-radius: 8px; font-size: 1rem; font-family: inherit; background: var(--paper);
-}
-.form-field input:focus, .form-field select:focus, .form-field textarea:focus {
-  outline: 2px solid var(--accent); border-color: var(--accent);
-}
-.book-side { background: var(--ink); color: #fff; border-radius: var(--radius); padding: 2rem; }
-.book-side h3 { margin-bottom: 0.6rem; }
-.book-side p { color: #d8d8d8; font-size: 0.95rem; margin-bottom: 1.25rem; }
-.book-steps { margin: 0; padding-left: 1.3rem; color: #d8d8d8; font-size: 0.95rem; }
-.book-steps li { margin-bottom: 0.6rem; }
-
-/* Responsive */
-@media (max-width: 900px) {
-  .package-grid { grid-template-columns: repeat(2, 1fr); }
-  .trust-grid { grid-template-columns: repeat(2, 1fr); }
-  .steps-grid, .why-grid { grid-template-columns: 1fr; }
-  .book-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
-  .hero h1 { font-size: 2.3rem; }
-}
-@media (max-width: 640px) {
-  .main-nav {
-    display: none; position: absolute; top: 100%; left: 0; right: 0;
-    background: var(--paper); flex-direction: column; padding: 1rem 20px 1.5rem;
-    border-bottom: 1px solid var(--line); gap: 0.9rem;
-  }
-  .main-nav.open { display: flex; }
-  .site-header { position: sticky; }
-  .header-inner { position: relative; flex-wrap: wrap; }
-  .nav-toggle { display: block; }
-  .header-cta .phone-link { display: none; }
-  .package-grid { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .hero { padding: 3.5rem 0; }
-  .hero-cta .btn { width: 100%; text-align: center; }
-}
-
-</style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "AutoBodyShop",
-  "name": "Trichara Paint Protection",
-  "description": "Mobile paint protection film installation. We come to your home or office.",
-  "areaServed": ["Sacramento CA", "Elk Grove CA", "Roseville CA", "Folsom CA", "Citrus Heights CA", "Rancho Cordova CA"],
-  "telephone": "+1-555-123-4567",
-  "priceRange": "$899 - $5999"
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "How long does installation take?", "acceptedAnswer": {"@type": "Answer", "text": "A partial or full front package takes about half a day. Track packages take a full day. Full body wraps take 3 to 5 days. We do it all at your driveway or office — you don't go anywhere."}},
-    {"@type": "Question", "name": "How long does paint protection film last?", "acceptedAnswer": {"@type": "Answer", "text": "The XPEL film we install carries a 10-year warranty against yellowing, peeling, and cracking. Most cars get 7 to 10 years of real-world protection."}},
-    {"@type": "Question", "name": "Can I wash my car normally with PPF?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Wash it like normal paint. Avoid abrasive compounds and pressure washers aimed directly at film edges for the first week."}},
-    {"@type": "Question", "name": "What if the film peels or bubbles?", "acceptedAnswer": {"@type": "Answer", "text": "Call us. Installation issues are covered — we'll come back and fix any lifting edge or bubble at no charge."}},
-    {"@type": "Question", "name": "Does PPF work on any car or color?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — any make, any color. The film is optically clear and invisible on gloss paint. Dark colors benefit the most since chips show the worst on them."}},
-    {"@type": "Question", "name": "Do I need to bring my car to a shop?", "acceptedAnswer": {"@type": "Answer", "text": "No. That's the whole point. We bring everything to your home or office — film, tools, and a canopy. You hand us the keys and go about your day."}}
-  ]
-}
-</script>
+<title>Vehicle Wraps Sacramento | Trichara Wrap Shop</title>
+<meta name="description" content="Premium vehicle wraps in Sacramento, CA. Full color-change wraps, chrome deletes, truck & SUV wraps, commercial fleet graphics. Call (424) 426-0760.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">TRICHARA <span>Paint Protection</span></a>
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">TRICHARA<span class="logo-sub">WRAP SHOP</span></a>
     <nav class="main-nav" id="mainNav">
-      <a href="#packages">Packages</a>
-      <a href="#how">How It Works</a>
-      <a href="#area">Service Area</a>
-      <a href="#faq">FAQ</a>
+      <a href="#services">Wraps</a>
+      <a href="#work">Work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="book.html">Contact</a>
     </nav>
-    <div class="header-cta">
-      <a href="tel:+15551234567" class="phone-link">(555) 123-4567</a>
-      <a href="#book" class="btn btn-primary">Book Now</a>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <a class="btn btn-call header-call" href="tel:+14244260760">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+      (424) 426-0760
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="container hero-inner">
-    <p class="eyebrow">Mobile paint protection film · Sacramento, CA</p>
-    <h1>Paint protection at your driveway.</h1>
-    <p class="hero-sub">We install XPEL paint protection film at your home or office. 10-year warranty. Most cars done in a day. You never visit a shop.</p>
-    <div class="hero-cta">
-      <a href="#packages" class="btn btn-primary btn-large">See Packages</a>
-      <a href="tel:+15551234567" class="btn btn-secondary btn-large">Call (555) 123-4567</a>
+  <div class="hero-bg" style="background-image:url('https://www.motorbiscuit.com/wp-content/uploads/2021/02/2008-Lexus-IS-F.jpg?w=1024&h=739')"></div>
+  <div class="hero-shade"></div>
+  <div class="wrap hero-content">
+    <p class="eyebrow">Sacramento vehicle wraps</p>
+    <h1>Turn heads<br>everywhere<br>you drive.</h1>
+    <p class="hero-sub">Color-change wraps, chrome deletes, fleet graphics. Done right.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-big" href="tel:+14244260760">Call (424) 426-0760</a>
+      <a class="btn btn-ghost btn-big" href="#work">See the work</a>
     </div>
-    <p class="microcopy">Free quotes · No shop visit needed · We come to you</p>
+    <p class="hero-note">Mon–Sat 8am–6pm · Serving the Sacramento metro</p>
   </div>
 </section>
 
-<section class="trust-bar">
-  <div class="container trust-grid">
-    <div class="trust-item"><strong>We come to you</strong><span>Home or office — your car never leaves</span></div>
-    <div class="trust-item"><strong>XPEL film</strong><span>Self-healing, optically clear</span></div>
-    <div class="trust-item"><strong>10-year warranty</strong><span>Against yellowing, peeling, cracking</span></div>
-    <div class="trust-item"><strong>Done in a day</strong><span>Most packages, start to finish</span></div>
+<!-- FINISH MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Gloss</span><span class="dot">·</span><span>Satin</span><span class="dot">·</span><span>Matte</span><span class="dot">·</span><span>Metallic</span><span class="dot">·</span><span>Chrome delete</span><span class="dot">·</span><span>Color shift</span><span class="dot">·</span><span>Carbon fiber</span><span class="dot">·</span>
+    <span>Gloss</span><span class="dot">·</span><span>Satin</span><span class="dot">·</span><span>Matte</span><span class="dot">·</span><span>Metallic</span><span class="dot">·</span><span>Chrome delete</span><span class="dot">·</span><span>Color shift</span><span class="dot">·</span><span>Carbon fiber</span><span class="dot">·</span>
   </div>
-</section>
+</div>
 
-<section class="packages" id="packages">
-  <div class="container">
-    <h2>Packages &amp; pricing</h2>
-    <p class="section-sub">Straightforward pricing. No "call for a quote" games — pick the coverage you want and book it.</p>
-    <div class="package-grid">
-
-      <div class="package-card">
-        <h3>Partial Front</h3>
-        <p class="price">$899</p>
-        <ul>
-          <li>Front bumper</li>
-          <li>Partial hood (leading edge)</li>
-          <li>Mirror caps</li>
-        </ul>
-        <p class="package-meta">~ Half day · Best for daily commuters on a budget</p>
-        <a href="#book" data-package="partial" class="btn btn-secondary btn-block">Book Partial Front</a>
-      </div>
-
-      <div class="package-card featured">
-        <p class="badge">Most popular</p>
-        <h3>Full Front</h3>
-        <p class="price">$1,999</p>
-        <ul>
-          <li>Full hood — no visible film line</li>
-          <li>Full front fenders</li>
-          <li>Front bumper</li>
-          <li>Mirror caps &amp; headlights</li>
-        </ul>
-        <p class="package-meta">~ Half day · The one most owners choose</p>
-        <a href="#book" data-package="full-front" class="btn btn-primary btn-block">Book Full Front</a>
-      </div>
-
-      <div class="package-card">
-        <h3>Track Package</h3>
-        <p class="price">$2,999</p>
-        <ul>
-          <li>Everything in Full Front</li>
-          <li>Rocker panels</li>
-          <li>A-pillars &amp; door edges</li>
-        </ul>
-        <p class="package-meta">~ Full day · For sports cars, EVs &amp; highway drivers</p>
-        <a href="#book" data-package="track" class="btn btn-secondary btn-block">Book Track Package</a>
-      </div>
-
-      <div class="package-card">
-        <h3>Full Body</h3>
-        <p class="price">from $5,999</p>
-        <ul>
-          <li>Every painted panel</li>
-          <li>One consistent finish</li>
-          <li>Quoted after inspection</li>
-        </ul>
-        <p class="package-meta">3–5 days · For luxury, exotic &amp; forever cars</p>
-        <a href="#book" data-package="full-body" class="btn btn-secondary btn-block">Get Full Body Quote</a>
-      </div>
-
-    </div>
-    <p class="packages-note">Prices are for most sedans and small SUVs. Large trucks, 3-row SUVs, and exotics may run higher — we'll confirm before we start, never after.</p>
-  </div>
-</section>
-
-<section class="how" id="how">
-  <div class="container">
-    <h2>How it works</h2>
-    <div class="steps-grid">
-      <div class="step"><span class="step-num">1</span><h3>Book in 2 minutes</h3><p>Pick a package online or call us. We'll confirm your vehicle and lock a day that works for you.</p></div>
-      <div class="step"><span class="step-num">2</span><h3>We come to you</h3><p>We show up with everything — film, tools, canopy. Your car stays in your driveway or office lot.</p></div>
-      <div class="step"><span class="step-num">3</span><h3>Done in a day</h3><p>Most packages finished same day. You inspect it, we hand back the keys. 10-year warranty in writing.</p></div>
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2>One shop. Every kind of wrap.</h2>
+    <div class="cards-4">
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=800&q=70')" role="img" aria-label="Red sports car with gloss wrap"></div>
+        <div class="card-body">
+          <h3>Full color-change wraps</h3>
+          <p>A new color without the paint-shop bill. 200+ finishes.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1614026480209-cd9934144671?auto=format&fit=crop&w=800&q=70')" role="img" aria-label="Close-up of wrapped car front end"></div>
+        <div class="card-body">
+          <h3>Chrome deletes &amp; accents</h3>
+          <p>Black out trim, badges, surrounds. Same-day options.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1605893477799-b99e3b8b93fe?auto=format&fit=crop&w=800&q=70')" role="img" aria-label="Gray pickup truck"></div>
+        <div class="card-body">
+          <h3>Trucks &amp; SUVs</h3>
+          <p>Raptors to work trucks. Rugged finishes that hold up.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1592805144716-feeccccef5ac?auto=format&fit=crop&w=800&q=70')" role="img" aria-label="Semi truck on highway at dusk"></div>
+        <div class="card-body">
+          <h3>Semi trucks &amp; fleets</h3>
+          <p>Rolling billboards. Cabs, trailers, full fleet graphics.</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="why">
-  <div class="container why-inner">
-    <h2>Why protect your paint?</h2>
-    <div class="why-grid">
-      <div class="why-item"><h3>Rock chips are expensive</h3><p>Repainting a chipped bumper runs $500–$1,500. A hood respray can top $2,000. Film costs less than one repaint — and prevents all of them.</p></div>
-      <div class="why-item"><h3>Resale value</h3><p>Original factory paint is worth real money at trade-in. A car with clean, protected paint appraises higher than one with a resprayed front end.</p></div>
-      <div class="why-item"><h3>It heals itself</h3><p>Light scratches and swirls disappear with heat from the sun or engine. The film we install is self-healing — that's not marketing, it's the top coat chemistry.</p></div>
+<!-- GALLERY -->
+<section class="section section-dark" id="work">
+  <div class="wrap">
+    <p class="eyebrow">Recent work</p>
+    <h2>Fresh out of the shop.</h2>
+    <p class="section-sub">Pick a finish. We'll put it on your car.</p>
+    <div class="gallery" id="gallery">
+      <figure class="g-item"><img src="https://static0.carbuzzimages.com/wordpress/wp-content/uploads/2025/01/10-95.jpg" alt="Red Lexus IS F" loading="lazy"><figcaption>Lexus IS F · gloss red</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=800&q=70" alt="Red sports car with gloss red wrap" loading="lazy"><figcaption>Torch red · gloss</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=crop&w=800&q=70" alt="Blue supercar with gloss blue wrap" loading="lazy"><figcaption>Electric blue · gloss</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=70" alt="Yellow sports car with gloss yellow wrap" loading="lazy"><figcaption>Sunflower yellow · gloss</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?auto=format&fit=crop&w=800&q=70" alt="Sports car with custom purple printed graphics wrap" loading="lazy"><figcaption>Custom printed graphics</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=70" alt="Black wagon with satin black wrap" loading="lazy"><figcaption>Satin black · full wrap</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=800&q=70" alt="Black muscle car with gloss black wrap at sunset" loading="lazy"><figcaption>Gloss black · full wrap</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=70" alt="White performance sedan with gloss white wrap" loading="lazy"><figcaption>Gloss white · full wrap</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=70" alt="Orange coupe with metallic orange wrap" loading="lazy"><figcaption>Metallic orange · full wrap</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=70" alt="White sports car with pearl white wrap" loading="lazy"><figcaption>Pearl white · full wrap</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=70" alt="White supercar with satin white wrap" loading="lazy"><figcaption>Satin white · full wrap</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1605893477799-b99e3b8b93fe?auto=format&fit=crop&w=800&q=70" alt="Gray pickup truck with stealth gray wrap" loading="lazy"><figcaption>Stealth gray · truck wrap</figcaption></figure>
+      <figure class="g-item"><img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=70" alt="White SUV with matte wrap in desert" loading="lazy"><figcaption>Matte sand · SUV wrap</figcaption></figure>
+      <figure class="g-item"><img src="https://www.tstransportinc.com/semi-truck-on-highway-at-sunset.jpg" alt="Red semi truck at sunset" loading="lazy"><figcaption>Semi · fleet graphics</figcaption></figure>
+      <figure class="g-item"><img src="https://pditechnologies.com/wp-content/uploads/2022/08/carriers-haulers-optimize-operations-1024x704.jpg" alt="Chrome semi truck on highway" loading="lazy"><figcaption>Semi · full wrap</figcaption></figure>
     </div>
-    <p class="why-honest">Honest take: PPF isn't cheap. It's cheaper than repainting. If you drive highways, own a dark-colored car, or plan to keep it 5+ years, the math works.</p>
+    <div class="center">
+      <a class="btn btn-big" href="tel:+14244260760">Get your wrap — (424) 426-0760</a>
+    </div>
   </div>
 </section>
 
-<section class="area" id="area">
-  <div class="container">
-    <h2>Service area</h2>
-    <p class="section-sub">We're mobile across the Sacramento metro. If you're inside the area, there's no trip charge.</p>
+<!-- WHY WRAP -->
+<section class="section">
+  <div class="wrap split">
+    <div class="split-img" style="background-image:url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=70')" role="img" aria-label="Silver coupe at sunset"></div>
+    <div class="split-body">
+      <p class="eyebrow">Why wrap</p>
+      <h2>New-car look.<br>No paint-shop bill.</h2>
+      <ul class="check-list">
+        <li><strong>Half the cost of paint.</strong> Done in days, not weeks.</li>
+        <li><strong>Protects factory paint</strong> from chips and sun.</li>
+        <li><strong>Fully reversible.</strong> Peel it off — paint looks new.</li>
+        <li><strong>200+ finishes</strong> paint can't do.</li>
+      </ul>
+      <a class="btn" href="tel:+14244260760">Talk wraps — (424) 426-0760</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<!-- PRICING NOTE FOR OWNER: "starting at" prices below. Adjust to your real numbers anytime. -->
+<section class="section section-dark" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2>Straight numbers.</h2>
+    <p class="section-sub">Starting prices. Call for an exact quote — two minutes.</p>
+    <div class="cards-3">
+      <article class="price-card">
+        <h3>Coupes &amp; Sedans</h3>
+        <p class="price"><span class="from">from</span> $2,999</p>
+        <ul>
+          <li>Full color-change wrap</li>
+          <li>3M or Avery pro film</li>
+          <li>Door jambs included</li>
+          <li>2–3 day turnaround</li>
+        </ul>
+        <a class="btn btn-ghost" href="tel:+14244260760">Call for quote</a>
+      </article>
+      <article class="price-card featured">
+        <p class="flag">Most popular</p>
+        <h3>Trucks &amp; SUVs</h3>
+        <p class="price"><span class="from">from</span> $3,499</p>
+        <ul>
+          <li>Full color-change wrap</li>
+          <li>3M or Avery pro film</li>
+          <li>Rugged matte &amp; satin options</li>
+          <li>3–4 day turnaround</li>
+        </ul>
+        <a class="btn" href="tel:+14244260760">Call for quote</a>
+      </article>
+      <article class="price-card">
+        <h3>Chrome Delete</h3>
+        <p class="price"><span class="from">from</span> $799</p>
+        <ul>
+          <li>Window trim &amp; badges</li>
+          <li>Grille &amp; mirror caps</li>
+          <li>Satin or gloss black</li>
+          <li>Same-day service</li>
+        </ul>
+        <a class="btn btn-ghost" href="tel:+14244260760">Call for quote</a>
+      </article>
+    </div>
+    <p class="price-note">Commercial &amp; fleet graphics quoted per vehicle — call <a href="tel:+14244260760">(424) 426-0760</a>.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2>Wrapped in four steps.</h2>
+    <div class="steps">
+      <div class="step"><span class="step-n">1</span><h3>Call us</h3><p>Your car, the look you want. Real number on the phone.</p></div>
+      <div class="step"><span class="step-n">2</span><h3>Pick a finish</h3><p>200+ films. We'll steer you to what looks right.</p></div>
+      <div class="step"><span class="step-n">3</span><h3>We wrap it</h3><p>Wash, prep, wrap, trim. Most cars done in 2–4 days.</p></div>
+      <div class="step"><span class="step-n">4</span><h3>Drive it</h3><p>Brand-new look, plus wash and care tips.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<!-- OWNER: replace these sample reviews with real customer reviews -->
+<section class="section section-dark" id="reviews">
+  <div class="wrap">
+    <p class="eyebrow">Reviews</p>
+    <h2>Drivers talk.</h2>
+    <div class="cards-3">
+      <article class="review-card">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <p>"My M4 went from boring white to satin black and it looks factory. Edges are perfect — you can't tell it's vinyl until you touch it."</p>
+        <p class="reviewer">— Marcus T., Sacramento</p>
+      </article>
+      <article class="review-card">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <p>"Had my Raptor wrapped in stealth gray. Took three days, price was exactly what they quoted on the phone. Zero surprises."</p>
+        <p class="reviewer">— Dave R., Roseville</p>
+      </article>
+      <article class="review-card">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <p>"Chrome delete on my Model 3. In and out the same day. The car finally looks the way it should have from the factory."</p>
+        <p class="reviewer">— Priya S., Elk Grove</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Service area</p>
+    <h2>Sacramento's wrap shop.</h2>
+    <p class="section-sub">Drop it at the shop or ask about pickup. We wrap cars from:</p>
     <ul class="area-list">
-      <li>Sacramento</li><li>Elk Grove</li><li>Roseville</li><li>Folsom</li>
-      <li>Citrus Heights</li><li>Rancho Cordova</li><li>Natomas</li><li>Carmichael</li>
-      <li>Fair Oaks</li><li>Orangevale</li><li>Rocklin</li><li>Davis</li>
+      <li>Sacramento</li><li>Elk Grove</li><li>Roseville</li><li>Folsom</li><li>Citrus Heights</li><li>Rancho Cordova</li><li>Natomas</li><li>Carmichael</li><li>Fair Oaks</li><li>Orangevale</li><li>Rocklin</li><li>Davis</li>
     </ul>
-    <p class="packages-note">Outside the area? Call us — we'll tell you straight whether we can make it work.</p>
   </div>
 </section>
 
-<section class="faq" id="faq">
-  <div class="container faq-inner">
-    <h2>Common questions</h2>
-    <details open><summary>How long does installation take?</summary><p>A partial or full front package takes about half a day. Track packages take a full day. Full body wraps take 3 to 5 days. We do it all at your driveway or office — you don't go anywhere.</p></details>
-    <details><summary>How long does the film last?</summary><p>The XPEL film we install carries a 10-year warranty against yellowing, peeling, and cracking. In real-world daily driving, expect 7 to 10 years of protection.</p></details>
-    <details><summary>Can I wash my car normally?</summary><p>Yes — wash it like normal paint. Just avoid abrasive compounds, and keep pressure washers away from film edges for the first week while everything fully sets.</p></details>
-    <details><summary>What if the film peels or bubbles?</summary><p>Call us. Installation issues are on us — we'll come back and fix any lifting edge or bubble at no charge. That's part of the warranty, not a favor.</p></details>
-    <details><summary>Does it work on any car or color?</summary><p>Yes. Any make, any color — the film is optically clear and invisible on gloss paint. Dark colors benefit most, since chips show worst on black, blue, and red.</p></details>
-    <details><summary>Do I need to bring my car anywhere?</summary><p>No. That's the whole point. We bring film, tools, and a canopy to your home or office. You hand us the keys and go about your day.</p></details>
-  </div>
-</section>
-
-<section class="book-page" id="book">
-  <div class="container book-inner">
-    <h1>Book your install</h1>
-    <p class="section-sub">Two minutes. We'll call to confirm your vehicle details and lock your install day — usually within a few hours.</p>
-
-    <div class="book-grid">
-      <form class="book-form" action="https://formsubmit.co/info@trichara.com" method="POST">
-        <input type="hidden" name="_subject" value="New PPF booking request — Trichara">
-        <input type="hidden" name="_template" value="table">
-
-        <div class="form-row">
-          <div class="form-field">
-            <label for="name">Full name *</label>
-            <input type="text" id="name" name="name" required autocomplete="name">
-          </div>
-          <div class="form-field">
-            <label for="phone">Phone *</label>
-            <input type="tel" id="phone" name="phone" required autocomplete="tel">
-          </div>
-        </div>
-
-        <div class="form-field">
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" required autocomplete="email">
-        </div>
-
-        <div class="form-row">
-          <div class="form-field">
-            <label for="vehicle">Vehicle (year / make / model) *</label>
-            <input type="text" id="vehicle" name="vehicle" placeholder="e.g. 2024 Tesla Model Y" required>
-          </div>
-          <div class="form-field">
-            <label for="package">Package *</label>
-            <select id="package" name="package" required>
-              <option value="partial">Partial Front — $899</option>
-              <option value="full-front" selected>Full Front — $1,999</option>
-              <option value="track">Track Package — $2,999</option>
-              <option value="full-body">Full Body — from $5,999</option>
-              <option value="not-sure">Not sure — help me choose</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-field">
-          <label for="address">Install address (street, city, ZIP) *</label>
-          <input type="text" id="address" name="install_address" placeholder="Where we'll do the work — driveway or office lot" required autocomplete="street-address">
-        </div>
-
-        <div class="form-field">
-          <label for="date">Preferred date</label>
-          <input type="date" id="date" name="preferred_date">
-        </div>
-
-        <div class="form-field">
-          <label for="notes">Anything we should know? (optional)</label>
-          <textarea id="notes" name="notes" rows="3" placeholder="Existing chips, aftermarket parts, gate codes…"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-large btn-block">Request My Install Day</button>
-        <p class="microcopy" style="text-align:center">No payment due now — we confirm everything by phone first.</p>
-      </form>
-
-      <aside class="book-side">
-        <h3>Prefer to talk?</h3>
-        <p>Call or text us and we'll get you booked in one conversation.</p>
-        <a href="tel:+15551234567" class="btn btn-secondary btn-large btn-block">(555) 123-4567</a>
-        <h3 style="margin-top:2rem">What happens next</h3>
-        <ol class="book-steps">
-          <li>We call to confirm your vehicle and package.</li>
-          <li>We lock your install day — usually within the week.</li>
-          <li>We show up with everything. You hand us the keys.</li>
-        </ol>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<section class="final-cta">
-  <div class="container">
-    <h2>Your paint won't protect itself.</h2>
-    <p>Free quote. No pressure. We'll tell you straight whether your car is a good candidate.</p>
-    <div class="hero-cta">
-      <a href="#book" class="btn btn-primary btn-large">Get My Free Quote</a>
-      <a href="tel:+15551234567" class="btn btn-secondary btn-large">Call (555) 123-4567</a>
-    </div>
+<!-- BIG CTA -->
+<section class="cta-banner" style="background-image:url('https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=1600&q=70')">
+  <div class="cta-shade"></div>
+  <div class="wrap cta-content">
+    <h2>Ready for a new look?</h2>
+    <p>One call. Real price. Two-minute conversation.</p>
+    <a class="btn btn-big" href="tel:+14244260760">Call (424) 426-0760</a>
+    <p class="cta-hours">Mon–Sat 8am–6pm</p>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="container footer-grid">
+  <div class="wrap footer-grid">
     <div>
-      <p class="logo">TRICHARA <span>Paint Protection</span></p>
-      <p class="footer-tag">Mobile paint protection film.<br>We come to you.</p>
+      <p class="logo">TRICHARA<span class="logo-sub">WRAP SHOP</span></p>
+      <p class="muted">Premium vehicle wraps in Sacramento, CA.</p>
     </div>
     <div>
-      <p class="footer-head">Packages</p>
-      <a href="#packages">Partial Front — $899</a>
-      <a href="#packages">Full Front — $1,999</a>
-      <a href="#packages">Track — $2,999</a>
-      <a href="#packages">Full Body — from $5,999</a>
+      <p class="foot-head">Call us</p>
+      <p><a href="tel:+14244260760">(424) 426-0760</a></p>
+      <p class="muted">Mon–Sat 8am–6pm</p>
     </div>
     <div>
-      <p class="footer-head">Company</p>
-      <a href="#how">How it works</a>
-      <a href="#area">Service area</a>
-      <a href="#faq">FAQ</a>
-      <a href="#book">Book now</a>
+      <p class="foot-head">Shop</p>
+      <p class="muted">Sacramento, CA<br>By appointment</p>
     </div>
     <div>
-      <p class="footer-head">Contact</p>
-      <a href="tel:+15551234567">(555) 123-4567</a>
-      <p class="footer-tag">Sacramento, CA<br>Mon–Sat, 8am–6pm</p>
+      <p class="foot-head">Explore</p>
+      <p><a href="#services">Wraps</a><br><a href="#work">Work</a><br><a href="#pricing">Pricing</a><br><a href="book.html">Contact</a></p>
     </div>
   </div>
-  <div class="container footer-bottom">
-    <p>© 2026 Trichara Paint Protection. All rights reserved.</p>
+  <div class="wrap foot-bottom">
+    <p class="muted">© 2026 Trichara Wrap Shop. All rights reserved.</p>
   </div>
 </footer>
 
-<script>
-// Trichara PPF — site interactions
-(function () {
-  // Mobile nav toggle
-  var toggle = document.getElementById('navToggle');
-  var nav = document.getElementById('mainNav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      nav.classList.toggle('open');
-    });
-    nav.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { nav.classList.remove('open'); });
-    });
-  }
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+  <img id="lightboxImg" alt="">
+  <p id="lightboxCap"></p>
+</div>
 
-  // Pre-select package from ?package= param
-  var params = new URLSearchParams(window.location.search);
-  var pkg = params.get('package');
-  if (pkg) {
-    var select = document.getElementById('package');
-    if (select) {
-      var opt = select.querySelector('option[value="' + pkg + '"]');
-      if (opt) select.value = pkg;
-    }
-  }
-
-  // Default preferred-date to tomorrow
-  var dateInput = document.getElementById('date');
-  if (dateInput && !dateInput.value) {
-    var t = new Date();
-    t.setDate(t.getDate() + 1);
-    dateInput.value = t.toISOString().split('T')[0];
-  }
-
-  // Package buttons pre-select the package in the booking form
-  document.querySelectorAll('[data-package]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var select = document.getElementById('package');
-      if (select) {
-        var opt = select.querySelector('option[value="' + btn.getAttribute('data-package') + '"]');
-        if (opt) select.value = btn.getAttribute('data-package');
-      }
-    });
-  });
-
-})();
-</script>
+<script src="script.js"></script>
 </body>
 </html>
