@@ -131,7 +131,7 @@ else if(path.indexOf('/vehicles/')===0) key='models';
 else if(path.indexOf('/learn/')===0) key='brands';
 }
 if(key){
-var el = document.querySelector('.bottom-nav a[data-nav="'+key+'"]');
+var el = document.querySelector('.top-nav a[href="'+key+'"]');
 if(el) el.classList.add('active');
 }
 })();
