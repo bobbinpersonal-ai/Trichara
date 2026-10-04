@@ -254,7 +254,7 @@ border-bottom:1px solid var(--line);
 .g-item:hover img{transform:scale(1.05)}
 .g-item figcaption{
 position:absolute;left:0;right:0;bottom:0;padding:.6rem .8rem;
-background:rgba(5,6,7,.78);font-size:.82rem;font-weight:600;
+background:rgba(5,6,7,.78);font-size:.82rem;font-weight:600;display:none;
 }
 /* Split */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
