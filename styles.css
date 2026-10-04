@@ -415,3 +415,8 @@ to{transform:translateX(-50%)}}
 
 .review-img{height:140px;background-size:cover;background-position:center;border-radius:8px 8px 0 0;margin:-1.2rem -1.2rem 1rem}
 .review-card{overflow:hidden}
+
+.foot-logo{color:#fff;font-size:1.3rem;font-weight:800;letter-spacing:-.02em}
+
+/* No captions site-wide */
+.acard figcaption,.card-body,.g-item figcaption{display:none !important}
