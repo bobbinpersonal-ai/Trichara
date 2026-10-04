@@ -22,7 +22,7 @@ a.addEventListener('click', function(){ nav.classList.remove('open'); });
 });
 }
 // Reveal on scroll
-var revealEls = document.querySelectorAll('.card, .g-item, .step, .price-card, .review-card, .split');
+var revealEls = document.querySelectorAll('.card, .g-item, .step, .price-card, .review-card, .split, .acard, .style-card');
 revealEls.forEach(function(el){ el.classList.add('reveal'); });
 if('IntersectionObserver' in window){
 var io = new IntersectionObserver(function(entries){
