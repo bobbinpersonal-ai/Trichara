@@ -95,20 +95,20 @@ document.title = m.name + " Wraps (" + m.years + ") — Colors, Packages & Prici
 var meta = document.querySelector('meta[name="description"]');
 if(meta) meta.setAttribute("content", "Vinyl wrap finishes, packages and pricing for the " + m.name + " (" + m.years + "). " + CATL[m.cat] + " " + m.body + " wraps.");
 var pkgs = [
-["Full color change","from $2,999","/packages/full-color-change.html"],
-["Black roof","from $399","/packages/black-roof.html"],
-["Chrome delete","from $799","/packages/chrome-delete.html"],
-["Racing stripes","from $499","/packages/racing-stripes.html"]
+["Full color change","/packages/full-color-change.html"],
+["Black roof","/packages/black-roof.html"],
+["Chrome delete","/packages/chrome-delete.html"],
+["Racing stripes","/packages/racing-stripes.html"]
 ];
-var pkgHtml = pkgs.map(p=>'<a class="pkg-card" href="'+p[2]+'"><h3>'+p[0]+'</h3><p class="pkg-price">'+p[1]+'</p></a>').join("");
+var pkgHtml = pkgs.map(p=>'<a class="pkg-card" href="'+p[1]+'"><h3>'+p[0]+'</h3><p class="pkg-cta">Call for quote →</p></a>').join("");
 var related = models.filter(x=>x.cat===m.cat && x.slug!==m.slug).slice(0,4);
-var relHtml = related.map(r=>'<a class="model-card" href="/models/'+r.slug+'"><span class="model-img" style="background-image:url(\''+r.photo+'\')"></span><span class="model-name">'+r.name+'</span><span class="model-years">'+r.years+'</span></a>').join("");
+var relHtml = related.map(r=>'<a class="model-card" href="/models/'+r.slug+'"><span class="model-img" style="background-image:url(\''+((realwraps[r.slug]&&realwraps[r.slug][0])?realwraps[r.slug][0].url:r.photo)+'\')"></span><span class="model-name">'+r.name+'</span><span class="model-years">'+r.years+'</span></a>').join("");
 var rw = realwraps[m.slug] || [];
 var rwHtml = rw.length ? '<section class="section"><div class="wrap"><p class="eyebrow">Real wraps</p><h2>Wrapped '+m.name.split(" ").slice(1).join(" ")+'s.</h2><p class="section-sub">Actual vinyl jobs on this exact model — not stock photos.</p><div class="gallery gallery-4">' +
-rw.map(p=>'<figure class="g-item"><img src="'+p.url+'" alt="'+m.name+' — '+p.desc+'" loading="lazy"><figcaption>'+p.slot+' · '+p.desc+'</figcaption></figure>').join("") +
+rw.map(p=>'<figure class="g-item"><img src="'+p.url+'" alt="'+m.name+' wrapped" loading="lazy"><figcaption>'+p.cap+'</figcaption></figure>').join("") +
 '</div></div></section>' : "";
 app.innerHTML =
-'<section class="page-hero" style="background-image:url(\''+m.photo+'\')"><div class="hero-shade"></div><div class="wrap page-hero-content">'+
+'<section class="page-hero" style="background-image:url(\''+((realwraps[m.slug]&&realwraps[m.slug][0])?realwraps[m.slug][0].url:m.photo)+'\')"><div class="hero-shade"></div><div class="wrap page-hero-content">'+
 '<p class="eyebrow">'+CATL[m.cat]+' · '+m.years+'</p><h1>'+m.name+'<br>wraps.</h1>'+
 '<p class="hero-sub">Every finish, every package — for your exact '+m.body.toLowerCase()+'.</p>'+
 '<div class="hero-ctas"><a class="btn btn-big" href="tel:+14244260760">Call (424) 426-0760</a> <a class="btn btn-ghost" href="/book.html">Book online</a></div>'+
@@ -116,6 +116,11 @@ app.innerHTML =
 '<section class="section edu"><div class="wrap narrow">'+
 '<p class="eyebrow">Why wrap a '+m.name+'?</p><h2>Protect it. Transform it.</h2>'+
 '<p class="lede">A vinyl wrap gives your '+m.name+' a brand-new color and a layer of paint protection — without the cost or permanence of paint. '+(m.photo&&m.credit?'Photo: '+m.credit+'.':'')+'</p>'+
+'</div></section>'+
+'<section class="section"><div class="wrap narrow">'+
+'<p class="eyebrow">Owner culture</p><h2>What '+m.name.split(" ").slice(1).join(" ")+' owners do.</h2>'+
+'<p class="lede">'+(m.owners||'')+'</p>'+
+'<div class="hero-ctas"><a class="btn btn-big" href="tel:+14244260760">Call (424) 426-0760</a></div>'+
 '</div></section>'+
 rwHtml +
 '<section class="section section-dark"><div class="wrap">'+
