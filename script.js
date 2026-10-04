@@ -38,6 +38,24 @@
     revealEls.forEach(function(el){ el.classList.add('visible'); });
   }
 
+  // Gallery filter tabs
+  var tabs = document.querySelectorAll('.ftab');
+  if(tabs.length){
+    tabs.forEach(function(b){
+      b.addEventListener('click', function(){
+        tabs.forEach(function(x){ x.classList.remove('active'); x.setAttribute('aria-selected','false'); });
+        b.classList.add('active');
+        b.setAttribute('aria-selected','true');
+        var f = b.getAttribute('data-filter');
+        document.querySelectorAll('.g-item').forEach(function(it){
+          var show = (f === 'all') || (it.getAttribute('data-cat') === f);
+          it.style.display = show ? '' : 'none';
+          if(show){ it.classList.remove('visible'); requestAnimationFrame(function(){ requestAnimationFrame(function(){ it.classList.add('visible'); }); }); }
+        });
+      });
+    });
+  }
+
   // Gallery lightbox
   var lb = document.getElementById('lightbox');
   var lbImg = document.getElementById('lightboxImg');

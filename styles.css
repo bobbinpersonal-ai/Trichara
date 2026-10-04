@@ -77,6 +77,20 @@ a{color:inherit}
 .marquee .dot{margin:0 .9rem}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
+/* Photo strip marquee */
+.photo-strip{overflow:hidden;background:#0c0c0e;border-top:1px solid #1c1c20;border-bottom:1px solid #1c1c20;padding:10px 0}
+.photo-strip-track{display:flex;gap:10px;width:max-content;animation:pstrip 45s linear infinite}
+.photo-strip-track img{height:120px;width:190px;object-fit:cover;border-radius:10px;flex:0 0 auto}
+@keyframes pstrip{to{transform:translateX(-50%)}}
+@media (max-width:640px){.photo-strip-track img{height:90px;width:140px}}
+
+/* Gallery filter tabs */
+.filter-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:6px 0 26px}
+.ftab{background:#141416;border:1px solid #2a2a30;color:#d8d8dc;font-weight:700;font-size:.95rem;padding:10px 20px;border-radius:999px;cursor:pointer;transition:.2s}
+.ftab:hover{border-color:var(--amber);color:#fff}
+.ftab.active{background:var(--amber);border-color:var(--amber);color:#111}
+.g-item{transition:opacity .25s, transform .25s}
+
 /* Cards */
 .cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
 .cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
