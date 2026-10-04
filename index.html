@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="scroll-bg" aria-hidden="true"><img src="https://i.pinimg.com/originals/b7/f8/71/b7f871645947e5e63451bf5a6d376c6c.jpg" alt="" loading="lazy"><img src="https://cimg8.ibsrv.net/gimg/www.corvetteforum.com-vbulletin/1125x876/92676f76_1e7d_4073_aa25_c568257c66d0_ded2e04d9f90ed5af58627ef363bd17511edb6ee.jpeg" alt="" loading="lazy"><img src="https://neckbreakervinylco.com/wp-content/uploads/2025/06/IMG_4369-scaled.jpg" alt="" loading="lazy"><img src="https://i.pinimg.com/736x/b3/58/58/b35858a152b33b23300ce6e39ea6c049.jpg" alt="" loading="lazy"><img src="https://images.squarespace-cdn.com/content/v1/5d814922cd6a49260de3f3b0/1574289811803-PRR7QB2AIZZIOPUV87Z8/3M+Matte+Black+Color+Change+Wrap+on+Nissan+GTR.jpg?format=2500w" alt="" loading="lazy"><img src="https://www.wrapsredefined.com/wp-content/uploads/2026/07/service-color-change-f150.webp" alt="" loading="lazy"><img src="https://svjstudios.com/assets/gallery-4-BqQniMXF.jpg" alt="" loading="lazy"><img src="http://racerxcustoms.com/cdn/shop/products/Dodge-Ram-2009-2018-WRAP_Shred-GY_1200x1200.jpg?v=1558472233" alt="" loading="lazy"></div>
 <header class="site-header" id="siteHeader">
 <div class="wrap header-inner">
 <a class="logo" href="/" aria-label="Trichara Wrap Shop — home">
@@ -405,5 +406,20 @@
 <p id="lightboxCap"></p>
 </div>
 <script src="script.js"></script>
+<script>
+(function(){
+var imgs=document.querySelectorAll('.scroll-bg img');if(!imgs.length)return;
+var n=imgs.length,cur=-1,tick=false;
+function upd(){
+tick=false;
+var h=document.documentElement;
+var p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);
+var i=Math.min(n-1,Math.floor(p*n));
+if(i!==cur){cur=i;imgs.forEach(function(im,j){im.classList.toggle('on',j===i)});}
+}
+addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});
+upd();
+})();
+</script>
 </body>
 </html>
