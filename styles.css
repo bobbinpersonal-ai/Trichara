@@ -414,3 +414,6 @@ padding-bottom:env(safe-area-inset-bottom)}
 @keyframes strip-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 body{padding-bottom:calc(64px + env(safe-area-inset-bottom))}
 }
+
+.review-img{height:140px;background-size:cover;background-position:center;border-radius:8px 8px 0 0;margin:-1.2rem -1.2rem 1rem}
+.review-card{overflow:hidden}
