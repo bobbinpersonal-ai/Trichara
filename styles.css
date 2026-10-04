@@ -400,3 +400,8 @@ flex-direction:column;padding:1rem 22px 1.4rem;gap:1rem;
 body:has(.scroll-bg) .section{background:rgba(8,8,9,.78)}
 body:has(.scroll-bg) .section-dark{background:rgba(12,13,15,.84)}
 body:has(.scroll-bg) .trust-bar{background:rgba(8,8,9,.78)}
+/* Hide top header on mobile — bottom nav + scroll pics take over */
+@media(max-width:860px){
+.site-header{display:none}
+body{padding-top:0 !important}
+}
