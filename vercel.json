@@ -1,0 +1,1 @@
+{"rewrites":[{"destination":"/models/wrap.html?m=:slug","source":"/models/:slug"}]}
