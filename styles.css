@@ -158,11 +158,12 @@ border-bottom:1px solid var(--line);
 @media(max-width:720px){.brand-card{flex-direction:column}.brand-logo{flex:none;width:100%}}
 .fineprint{font-size:.8rem;color:var(--muted);margin-top:1.2rem}
 /* Trust bar */
-.trust-bar{padding:2.6rem 0}
+.trust-bar{padding:2.6rem 0;background:#f4f4f4;color:#111}
 .trust-logos{display:flex;align-items:center;justify-content:center;gap:2.4rem;flex-wrap:wrap;margin:1.2rem 0}
-.trust-logos img{height:34px;width:auto;max-width:150px;object-fit:contain;filter:grayscale(1) brightness(1.6);opacity:.85;transition:filter .25s,opacity .25s}
+.trust-logos img{height:34px;width:auto;max-width:150px;object-fit:contain;filter:grayscale(1) brightness(.4);opacity:.9;transition:filter .25s,opacity .25s}
 .trust-logos img:hover{filter:none;opacity:1}
-.trust-bar a{color:var(--amber);font-weight:700;text-decoration:none}
+.trust-bar .eyebrow{color:#666}
+.trust-bar a{color:#b97a1a;font-weight:700;text-decoration:none}
 
 /* Photo collage (models index) */
 .chipbar{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-filter:blur(8px);border-bottom:1px solid #222;padding:.6rem 0}
