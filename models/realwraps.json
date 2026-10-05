@@ -223,24 +223,9 @@
  ],
  "freightliner-cascadia": [
   {
-   "slot": "black stealth",
-   "url": "https://www.thevehiclewrappingcentre.com/wp-content/uploads/d8b04fb4-d4cb-49c4-8d33-0951bd0f9be1.jpg",
-   "desc": "Scania semi in matte black outside \"WRAP GROUP\" building (shop-confirmed)."
-  },
-  {
    "slot": "clean white",
    "url": "https://cdllife.com/wp-content/uploads/2023/10/20231005_141508_EDIT.jpg",
    "desc": "Kenworth semi in white with pink breast-cancer-awareness printed graphics."
-  },
-  {
-   "slot": "color",
-   "url": "http://santarosasigncompany.com/img/content/vinyl-wraps-napa-ca/custom-semi-truck-vinyl-wrap-large.jpg",
-   "desc": "tanker semi in green/black dragon printed wrap (sign company)."
-  },
-  {
-   "slot": "color",
-   "url": "https://gotwrap.com/wp-content/uploads/2023/01/semi-truck.png",
-   "desc": "Freightliner semi in American-flag/Statue-of-Liberty printed wrap (Got Wrap)."
   }
  ],
  "ram-1500": [
