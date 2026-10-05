@@ -214,11 +214,6 @@
    "desc": "Range Rover in matte black."
   },
   {
-   "slot": "clean white",
-   "url": "https://djdetailing.co.uk/wp-content/uploads/2026/07/Range-rover-Vogue-Full-Wrap_0009_Range-Rover-Vogue-Full-Wrap-Pearl-White_0012_Layer-0.jpg",
-   "desc": "Vogue in pearl-white full wrap, wrap-shop setting."
-  },
-  {
    "slot": "color",
    "url": "https://metroplexcustoms.com/_next/image?url=%2Fapi%2Fmedia%2Ffile%2F2018-range-rover-range-rover-vehicle-wraps-05.jpg&w=1200&q=75",
    "desc": "Range Rover in black/white/gray camo wrap (Metroplex Customs)."
@@ -318,10 +313,6 @@
   {
    "url": "https://www.wrapatlanta.net/wp-content/uploads/2026/04/IMG_8237-980x735.jpg",
    "cap": "bold purple printed anime (Dragon Ball) full wrap, Camry in wrap shop install ba"
-  },
-  {
-   "url": "https://fat-tony.ru/%D0%9D%D0%B0%D1%88%D0%B8%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20%D1%84%D0%BE%D1%82%D0%BE/Toyota%20Camry.%20%D0%9E%D0%BA%D0%BB%D0%B5%D0%B9%D0%BA%D0%B0%20%D0%BA%D1%83%D0%B7%D0%BE%D0%B2%D0%B0%20%D0%B2%20Satin%20Black/Toyota-Camry-okleyka-Satin-Black-4.jpg.webp",
-   "cap": "satin black full wrap on Camry, wrap shop install bay (Fat Tony studio). WebP; ("
   }
  ],
  "toyota-corolla": [
@@ -334,12 +325,7 @@
    "cap": "matte purple full wrap Corolla sedan, detail-studio project page (toyzdetailstud"
   }
  ],
- "toyota-rav4": [
-  {
-   "url": "http://vinyl16.ru/mein/uploads/2025/09/IMG_0044.jpg",
-   "cap": "matte black matte-polyurethane full wrap RAV4, shop project photo (vinyl16.ru, s"
-  }
- ],
+ "toyota-rav4": [],
  "toyota-tacoma": [
   {
    "url": "https://www.beyondwraps.com/cdn/shop/products/IMG_7462.jpg?v=1650437364&width=1680",
@@ -499,12 +485,7 @@
    "cap": "Full blue \"storm\" commercial wrap (Whirlwind Roofing & Construction), Outlaw Kus"
   }
  ],
- "hyundai-sonata": [
-  {
-   "url": "https://vinylkazan.ru/media/uploads/2025/07/IMG_3575.jpg",
-   "cap": "Dark chameleon iridescent full wrap"
-  }
- ],
+ "hyundai-sonata": [],
  "dodge-charger": [
   {
    "url": "https://wrapsforless.com/wp-content/uploads/2024/02/ColorChange-Matte-Charger-24-768x512.jpeg",
