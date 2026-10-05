@@ -421,3 +421,10 @@ to{transform:translateX(-50%)}}
 
 /* No captions site-wide */
 .acard figcaption,.card-body,.g-item figcaption{display:none !important}
+
+.fleet-stats{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin:2rem 0;text-align:center}
+.stat{display:flex;flex-direction:column;align-items:center;min-width:140px}
+.stat-num{font-size:2.8rem;font-weight:800;color:var(--amber)}
+.stat-label{font-size:.85rem;color:#aaa;max-width:160px;margin-top:.3rem}
+.fleet-photo{margin:1.5rem 0;border-radius:12px;overflow:hidden}
+.fleet-photo img{width:100%;display:block}
