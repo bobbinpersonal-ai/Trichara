@@ -389,7 +389,7 @@ flex-direction:column;padding:1rem 22px 1.4rem;gap:1rem;
 /* Let scroll-bg show through on homepage */
 body:has(.scroll-bg) .section{background:rgba(8,8,9,.78)}
 body:has(.scroll-bg) .section-dark{background:rgba(12,13,15,.84)}
-body:has(.scroll-bg) .trust-bar{background:rgba(244,244,244,.88)}
+body:has(.scroll-bg) .trust-bar{background:rgba(244,244,244,.45)}
 
 
 .logo-white{filter:brightness(0) invert(1)}
