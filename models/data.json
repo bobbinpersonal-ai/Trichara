@@ -26,19 +26,6 @@
   "owners": "Supra and 86 owners live for JDM street culture \u2014 color-shifts, itasha liveries, and carbon hoods. Tacoma and 4Runner owners go for chrome deletes, blacked-out badges, and matte finishes that suit the trail."
  },
  {
-  "slug": "toyota-rav4",
-  "make": "Toyota",
-  "model": "RAV4",
-  "name": "Toyota RAV4",
-  "years": "2019\u20132025",
-  "cat": "suv",
-  "origin": "japanese",
-  "body": "suv",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Toyota_RAV4_Core_Plug-in_Hybrid_%28XA60%29_Auto_Zuerich_2025_DSC_3038.jpg/1280px-Toyota_RAV4_Core_Plug-in_Hybrid_%28XA60%29_Auto_Zuerich_2025_DSC_3038.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "Alexander Migl",
-  "owners": "Supra and 86 owners live for JDM street culture \u2014 color-shifts, itasha liveries, and carbon hoods. Tacoma and 4Runner owners go for chrome deletes, blacked-out badges, and matte finishes that suit the trail."
- },
- {
   "slug": "toyota-tacoma",
   "make": "Toyota",
   "model": "Tacoma",
@@ -49,19 +36,6 @@
   "body": "pickup",
   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/2020_Toyota_Tacoma_TRD_Sport_4X4_Crew_Cab_V6_in_Barcelona_Red_Metallic%2C_rear_right.jpg/1280px-2020_Toyota_Tacoma_TRD_Sport_4X4_Crew_Cab_V6_in_Barcelona_Red_Metallic%2C_rear_right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "credit": "Mr.choppers",
-  "owners": "Supra and 86 owners live for JDM street culture \u2014 color-shifts, itasha liveries, and carbon hoods. Tacoma and 4Runner owners go for chrome deletes, blacked-out badges, and matte finishes that suit the trail."
- },
- {
-  "slug": "toyota-highlander",
-  "make": "Toyota",
-  "model": "Highlander",
-  "name": "Toyota Highlander",
-  "years": "2020\u20132025",
-  "cat": "suv",
-  "origin": "japanese",
-  "body": "suv",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/2020_Toyota_Highlander_Platinum_AWD_rear_NYIAS_2019.jpg/1280px-2020_Toyota_Highlander_Platinum_AWD_rear_NYIAS_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "Kevauto",
   "owners": "Supra and 86 owners live for JDM street culture \u2014 color-shifts, itasha liveries, and carbon hoods. Tacoma and 4Runner owners go for chrome deletes, blacked-out badges, and matte finishes that suit the trail."
  },
  {
@@ -208,32 +182,6 @@
   "owners": "Civic owners love murdered-out satin black and Nardo gray wraps with chrome deletes \u2014 Honda packs a lot of factory chrome. Type R drivers go for track-inspired looks with black roofs and dark tint."
  },
  {
-  "slug": "honda-cr-v",
-  "make": "Honda",
-  "model": "CR-V",
-  "name": "Honda CR-V",
-  "years": "2018\u20132025",
-  "cat": "suv",
-  "origin": "japanese",
-  "body": "suv",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2020_Honda_CR-V_LX_in_Modern_Steel_Metallic%2C_rear_left%2C_2026-07-03.jpg/1280px-2020_Honda_CR-V_LX_in_Modern_Steel_Metallic%2C_rear_left%2C_2026-07-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "Elise240SX",
-  "owners": "Civic owners love murdered-out satin black and Nardo gray wraps with chrome deletes \u2014 Honda packs a lot of factory chrome. Type R drivers go for track-inspired looks with black roofs and dark tint."
- },
- {
-  "slug": "honda-pilot",
-  "make": "Honda",
-  "model": "Pilot",
-  "name": "Honda Pilot",
-  "years": "2018\u20132025",
-  "cat": "suv",
-  "origin": "japanese",
-  "body": "suv",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Honda_Pilot_%2849482933648%29.jpg/1280px-Honda_Pilot_%2849482933648%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "Dennis Elzinga",
-  "owners": "Civic owners love murdered-out satin black and Nardo gray wraps with chrome deletes \u2014 Honda packs a lot of factory chrome. Type R drivers go for track-inspired looks with black roofs and dark tint."
- },
- {
   "slug": "honda-odyssey",
   "make": "Honda",
   "model": "Odyssey",
@@ -308,19 +256,6 @@
   "origin": "japanese",
   "body": "sedan",
   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/2020_Nissan_Sentra_SV_%282%29%2C_front_10.22.20.jpg/1280px-2020_Nissan_Sentra_SV_%282%29%2C_front_10.22.20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "Kevauto",
-  "owners": "Z and GT-R owners want aggression \u2014 matte black GT-Rs with red chrome accents, metallic midnight purple on the new Z. Nismo fans lean into motorsport graphics tied to Nissan's racing heritage."
- },
- {
-  "slug": "nissan-rogue",
-  "make": "Nissan",
-  "model": "Rogue",
-  "name": "Nissan Rogue",
-  "years": "2021\u20132025",
-  "cat": "suv",
-  "origin": "japanese",
-  "body": "suv",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/2020_Nissan_Rogue_Sport_SV_AWD_%28facelift%29%2C_rear_3.2.20.jpg/1280px-2020_Nissan_Rogue_Sport_SV_AWD_%28facelift%29%2C_rear_3.2.20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "credit": "Kevauto",
   "owners": "Z and GT-R owners want aggression \u2014 matte black GT-Rs with red chrome accents, metallic midnight purple on the new Z. Nismo fans lean into motorsport graphics tied to Nissan's racing heritage."
  },
@@ -572,19 +507,6 @@
   "owners": "Lexus owners want understated menace \u2014 satin and matte stealth wraps, full chrome deletes on the grille and trim. RC F owners lean toward gloss deep blues and smoky metallics."
  },
  {
-  "slug": "lexus-rx",
-  "make": "Lexus",
-  "model": "RX",
-  "name": "Lexus RX",
-  "years": "2018\u20132025",
-  "cat": "suv",
-  "origin": "japanese",
-  "body": "suv",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Lexus_RX_300_%2849977417138%29.jpg/1280px-Lexus_RX_300_%2849977417138%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "Dennis Elzinga",
-  "owners": "Lexus owners want understated menace \u2014 satin and matte stealth wraps, full chrome deletes on the grille and trim. RC F owners lean toward gloss deep blues and smoky metallics."
- },
- {
   "slug": "lexus-gx",
   "make": "Lexus",
   "model": "GX",
@@ -819,19 +741,6 @@
   "owners": "F-150 owners run the spectrum from contractors to enthusiasts \u2014 dead-matte black wraps, chrome deletes, gloss black roofs, and full commercial fleet graphics."
  },
  {
-  "slug": "ford-maverick",
-  "make": "Ford",
-  "model": "Maverick",
-  "name": "Ford Maverick",
-  "years": "2022\u20132025",
-  "cat": "truck",
-  "origin": "american",
-  "body": "pickup",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Ford_Maverick_II_%2852120529245%29.jpg/1280px-Ford_Maverick_II_%2852120529245%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "crash71100",
-  "owners": "F-150 owners run the spectrum from contractors to enthusiasts \u2014 dead-matte black wraps, chrome deletes, gloss black roofs, and full commercial fleet graphics."
- },
- {
   "slug": "ford-f-250-super-duty",
   "make": "Ford",
   "model": "F-250 Super Duty",
@@ -923,19 +832,6 @@
   "owners": "Silverado owners love blackout builds. Tahoe owners go for the 'tuxedo wrap' \u2014 gloss black over white \u2014 one of the hottest SUV trends going."
  },
  {
-  "slug": "chevrolet-equinox",
-  "make": "Chevrolet",
-  "model": "Equinox",
-  "name": "Chevrolet Equinox",
-  "years": "2018\u20132025",
-  "cat": "suv",
-  "origin": "american",
-  "body": "suv",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2022_Chevrolet_Equinox_LT%2C_front_right%2C_08-07-2024.jpg/1280px-2022_Chevrolet_Equinox_LT%2C_front_right%2C_08-07-2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "MercurySable99",
-  "owners": "Silverado owners love blackout builds. Tahoe owners go for the 'tuxedo wrap' \u2014 gloss black over white \u2014 one of the hottest SUV trends going."
- },
- {
   "slug": "chevrolet-traverse",
   "make": "Chevrolet",
   "model": "Traverse",
@@ -973,32 +869,6 @@
   "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Chevrolet_Blazer_RS_2020.jpg/1280px-Chevrolet_Blazer_RS_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "credit": "RL GNZLZ",
   "owners": "Silverado owners love blackout builds. Tahoe owners go for the 'tuxedo wrap' \u2014 gloss black over white \u2014 one of the hottest SUV trends going."
- },
- {
-  "slug": "dodge-challenger",
-  "make": "Dodge",
-  "model": "Challenger",
-  "name": "Dodge Challenger",
-  "years": "2018\u20132023",
-  "cat": "american",
-  "origin": "american",
-  "body": "coupe",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/DODGE_CHALLENGER_SRT8_THIRD_GENERATION_China.jpg/1280px-DODGE_CHALLENGER_SRT8_THIRD_GENERATION_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "Dinkun Chen",
-  "owners": "Charger and Challenger owners love splatter prints, racing stripes, and matte destroyer gray. Loud is the point."
- },
- {
-  "slug": "dodge-charger",
-  "make": "Dodge",
-  "model": "Charger",
-  "name": "Dodge Charger",
-  "years": "2018\u20132023",
-  "cat": "american",
-  "origin": "american",
-  "body": "sedan",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Dodge_Charger_%282015%29_Sindelfingen_2020_IMG_2401.jpg/1280px-Dodge_Charger_%282015%29_Sindelfingen_2020_IMG_2401.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "Alexander Migl",
-  "owners": "Charger and Challenger owners love splatter prints, racing stripes, and matte destroyer gray. Loud is the point."
  },
  {
   "slug": "dodge-durango",
@@ -1430,19 +1300,6 @@
   "owners": "Z and GT-R owners want aggression \u2014 matte black GT-Rs with red chrome accents, metallic midnight purple on the new Z. Nismo fans lean into motorsport graphics tied to Nissan's racing heritage."
  },
  {
-  "slug": "freightliner-cascadia",
-  "make": "Freightliner",
-  "model": "Cascadia",
-  "name": "Freightliner Cascadia",
-  "years": "2018\u20132025",
-  "cat": "truck",
-  "origin": "european",
-  "body": "semi",
-  "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Bakersfield%2C_%28CA%29_Truck_Freightliner_Cascadia_at_Flying_J_Travel.jpg/1280px-Bakersfield%2C_%28CA%29_Truck_Freightliner_Cascadia_at_Flying_J_Travel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "credit": "PIERRE ANDRE LECLERCQ",
-  "owners": "Owners love full color-change wraps, chrome deletes, and black roof packages that transform the look without touching the paint."
- },
- {
   "slug": "peterbilt-579",
   "make": "Peterbilt",
   "model": "579",
@@ -1738,19 +1595,6 @@
   "origin": "japanese",
   "body": "sedan",
   "photo": "https://velescentr.com/wp-content/uploads/2019/12/IMG_6631-768x576.jpg",
-  "cred": "",
-  "owners": "Elantra N owners go matte dark grey with factory red trim exposed. Ioniq 5 N drivers love Performance Blue-adjacent wraps and N-badge accent vinyl."
- },
- {
-  "slug": "hyundai-tucson",
-  "make": "Hyundai",
-  "model": "Tucson",
-  "name": "Hyundai Tucson",
-  "years": "2018\u20132025",
-  "cat": "japanese",
-  "origin": "japanese",
-  "body": "suv",
-  "photo": "https://kingwrap.vn/wp-content/uploads/2025/02/Tucson-doi-mau-den-sang-xanh-mo-dan-diem-hong-mo-5.jpg.webp",
   "cred": "",
   "owners": "Elantra N owners go matte dark grey with factory red trim exposed. Ioniq 5 N drivers love Performance Blue-adjacent wraps and N-badge accent vinyl."
  },

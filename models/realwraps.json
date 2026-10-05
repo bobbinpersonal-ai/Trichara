@@ -221,13 +221,6 @@
    "desc": "Raptor in purple/blue nebula printed wrap (WrapStyle)."
   }
  ],
- "freightliner-cascadia": [
-  {
-   "slot": "clean white",
-   "url": "https://cdllife.com/wp-content/uploads/2023/10/20231005_141508_EDIT.jpg",
-   "desc": "Kenworth semi in white with pink breast-cancer-awareness printed graphics."
-  }
- ],
  "ram-1500": [
   {
    "slot": "black stealth",
@@ -295,7 +288,6 @@
    "cap": "matte purple full wrap Corolla sedan, detail-studio project page (toyzdetailstud"
   }
  ],
- "toyota-rav4": [],
  "toyota-tacoma": [
   {
    "url": "https://www.beyondwraps.com/cdn/shop/products/IMG_7462.jpg?v=1650437364&width=1680",
@@ -310,7 +302,6 @@
    "cap": "matte magnetic black full wrap Tacoma, Wicked Wraps portfolio"
   }
  ],
- "toyota-highlander": [],
  "toyota-4runner": [
   {
    "url": "https://trail4runner.com/wp-content/uploads/2022/08/FF_Wrapped_4Runner09-768x512.jpg",
@@ -345,8 +336,6 @@
    "cap": "pink full wrap with anime itasha side graphics, Cruz Wrapz shop signage visible"
   }
  ],
- "honda-cr-v": [],
- "nissan-rogue": [],
  "nissan-altima": [],
  "nissan-sentra": [
   {
@@ -354,7 +343,6 @@
    "cap": "gloss black full wrap with LGCY Power commercial livery, Certified Install Wraps"
   }
  ],
- "honda-pilot": [],
  "ford-explorer": [
   {
    "url": "https://uploads.tapatalk-cdn.com/20210907/550b0ba09dd7c6f3d9da55de7d5aa27f.jpg",
@@ -369,16 +357,6 @@
    "cap": "Full color-shift (copper/violet/blue chameleon) wrap, pro gallery shoot from Nob"
   }
  ],
- "ford-maverick": [
-  {
-   "url": "https://cdn.mavericktruckclub.com/attachments/94/94128-41d98bc9638eff7a5dc07e6c7d85efee.jpg",
-   "cap": "Gloss black cab/roof/pillar partial wrap on white Maverick, owner build thread ("
-  },
-  {
-   "url": "https://cdn.mavericktruckclub.com/attachments/127/127521-8fc96e6457e68c5c086937c63008eeaf.webp",
-   "cap": "Full custom dinosaur/DNA cartoon graphic wrap (grey base), dramatic night shot \u2014"
-  }
- ],
  "chevrolet-silverado": [
   {
    "url": "https://andresdigitalprinting.com/wp-content/gf-uploads/2019/08/preview-m/Blue-Silverado-Wrap-0.jpg?t=1565943646",
@@ -389,7 +367,6 @@
    "cap": "Chameleon color-shift (rainbow/iridescent) full wrap, Star Car Wraps gallery pho"
   }
  ],
- "chevrolet-equinox": [],
  "chevrolet-tahoe": [
   {
    "url": "https://texasautotrim.com/wp-content/uploads/2023/11/IMG_0631-min.jpg",
@@ -415,18 +392,6 @@
   }
  ],
  "hyundai-sonata": [],
- "dodge-charger": [
-  {
-   "url": "https://i.pinimg.com/originals/87/03/c4/8703c47a134bcefafb33c8883e54b69c.jpg",
-   "cap": "Black/purple tiger-stripe wrap with purple underglow (bold)"
-  }
- ],
- "dodge-challenger": [
-  {
-   "url": "https://i.pinimg.com/originals/4a/cc/6f/4acc6f343b4937a903342b617fa72e94.jpg",
-   "cap": "Black/white marble full wrap with blue halo headlights (striking)"
-  }
- ],
  "subaru-forester": [
   {
    "url": "https://images.mrshopplus.com/416368003606552/DTB_proProduct/2023-09-05/ravoony_gloss_metallic_vampire_red_vinyl_car_wrap_subaru_forester_wrap_192D605F2E615.jpg",
@@ -491,16 +456,6 @@
    "cap": "Metallic green glitter full wrap, fresh in wrap shop (bold)"
   }
  ],
- "lexus-rx": [
-  {
-   "url": "https://images.squarespace-cdn.com/content/v1/6243fb7d7b296a3af0e9fcc8/e12cfa2e-2b76-497b-b43e-2476c3324c2e/Lexus+RX+350+vinyl+wrap+3M+matte+pine+green+full+vehicle+denver.jpg?format=750w",
-   "cap": "Matte pine-green 3M full wrap on RX 350, Denver Auto Spa (\"WRAPS\" signage visibl"
-  },
-  {
-   "url": "https://cdn.shopify.com/s/files/1/0565/1441/2659/files/Lexus_RX_matte_silver_vinyl_wrap.png?v=1718427866",
-   "cap": "Matte silver full wrap (white/light)"
-  }
- ],
  "mazda-cx-5": [
   {
    "url": "https://xwrap.es/_next/image?url=%2Fimages%2Fportfolio%2Fmazda-cx5-vinilo-metalizado-lateral.jpg&w=1200&q=75",
@@ -515,7 +470,6 @@
    "cap": "Red/orange geometric printed full wrap (striking)"
   }
  ],
- "hyundai-tucson": [],
  "kia-sportage": [
   {
    "url": "https://blog.vipautoaccessories.com/wp-content/uploads/2019/12/2019-kia-sportage-ex-think-pink-rear-hero-2.jpg",
